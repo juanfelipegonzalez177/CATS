@@ -32,15 +32,16 @@ export default function catDetail({cat, imageUrl,videoUrl, pdfUrl, hasError, onC
                     <div className="modal-url">{imageUrl}</div>
 
                     {/* ── Video desde Blob Storage ── */}
-                    <video
+                   <video
                         controls
                         style={{
-                            width: "100%",
+                            width: "60%",
+                            display: "block",
+                            margin: "0 auto 14px auto",
                             borderRadius: 10,
-                            marginBottom: 14,
                             background: "#0f0a06",
                         }}
-                    >
+                        >
                         <source src={videoUrl} type="video/mp4" />
                         Tu navegador no soporta video HTML5.
                     </video>
